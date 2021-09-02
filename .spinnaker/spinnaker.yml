@@ -63,6 +63,7 @@ environments:
                     httpGet:
                       port: traffic-port
                       path: /
+
   - name: prod
     constrains:
     - type: manual-judgement
