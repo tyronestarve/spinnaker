@@ -21,7 +21,7 @@ environments:
           kind: Service
           metadata:
             name: keeldemo
-            namespace: spinnaker
+            namespace: keel
           spec:
             ports:
             - port: 8080
@@ -41,7 +41,7 @@ environments:
           kind: Deployment
           metadata: 
             name: keeldemo
-            namespace: spinnaker
+            namespace: keel
           spec:
             replicas: 1
             selector:
@@ -82,7 +82,7 @@ environments:
           kind: Service
           metadata:
             name: keeldemo-prod
-            namespace: spinnaker
+            namespace: keel
           spec:
             ports:
             - port: 8080
@@ -102,7 +102,7 @@ environments:
           kind: Deployment
           metadata: 
             name: keeldemo-prod
-            namespace: spinnaker
+            namespace: keel
           spec:
             replicas: 1
             selector:
